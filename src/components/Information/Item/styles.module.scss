@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.icon {
+  color: black;
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.description {
+  margin-top: 5px;
+  color: #969695;
+  text-align: center;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

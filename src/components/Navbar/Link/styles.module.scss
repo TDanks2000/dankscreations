@@ -1,0 +1,26 @@
+.button{ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #13b79c;
+  padding: 8px .9rem;
+
+  text-transform: uppercase;
+  gap: 10px;
+
+  border-radius: 5px;
+
+}
+
+.default {  
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 5px;
+
+  & svg {
+    font-size: 15px;
+  }
+}
