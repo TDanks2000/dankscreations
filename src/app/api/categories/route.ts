@@ -10,6 +10,10 @@ export async function GET(request: NextRequest) {
     headers: {
       Authorization: `Bearer ${TOKEN}`,
     },
+    next: {
+      revalidate: 3600,
+      tags: ['categories'],
+    },
   });
 
   const res = await data.json();

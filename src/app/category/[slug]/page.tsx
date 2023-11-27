@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react';
 
-interface ProductPageProps {}
+interface CategoryPageProps {}
 
-// TODO: Implement product page
-const ProductPage: FunctionComponent<ProductPageProps> = () => {
+// TODO: Implement category page
+const CategoryPage: FunctionComponent<CategoryPageProps> = () => {
   return <>TODO</>;
 };
 
-export default ProductPage;
+export default CategoryPage;

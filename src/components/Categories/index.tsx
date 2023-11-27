@@ -1,32 +1,20 @@
-'use client';
-
-import { FunctionComponent, useEffect, useState } from 'react';
+import { NextPage } from 'next';
 import CategoryComponent from './Category';
 import styles from './styles.module.scss';
 
 interface CategoriesComponentProps {}
 
+const fetchCategories = async () => {
+  const data = await fetch(`http://localhost:3000/api/categories`);
+  const res = await data.json();
+
+  return res;
+};
+
 const CMS_URL = `https://cms.dankscreations.com`;
-const CategoriesComponent: FunctionComponent<CategoriesComponentProps> = () => {
-  const [data, setData] = useState<any>([]);
-  const [pending, setPending] = useState(true);
 
-  const fetcher = async () => {
-    const data = await fetch('/api/categories');
-    const res = await data.json();
-    setData(res);
-    setPending(false);
-  };
-
-  useEffect(() => {
-    fetcher();
-    return () => {
-      setData([]);
-      setPending(true);
-    };
-  }, []);
-
-  if (pending) return <div>Loading...</div>;
+const CategoriesComponent: NextPage<CategoriesComponentProps> = async () => {
+  const data = await fetchCategories();
 
   return (
     <div className={styles.container}>

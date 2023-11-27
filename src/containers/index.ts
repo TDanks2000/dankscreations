@@ -1,3 +1,3 @@
 import HomePage from './HomePage';
-
-export { HomePage };
+import { ProductPageContainer } from './ProductPage';
+export { HomePage, ProductPageContainer };

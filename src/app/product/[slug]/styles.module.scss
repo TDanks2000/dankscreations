@@ -1,0 +1,28 @@
+.container {
+  margin: 25px 5em;
+
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  color: black;
+  font-weight: 500;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 500;
+}

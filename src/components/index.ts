@@ -3,4 +3,6 @@ import HeroComponent from './Hero';
 import InformationComponent from './Information';
 import Navbar from './Navbar';
 
-export { CategoriesComponent, HeroComponent, InformationComponent, Navbar };
+import * as Info from './Info';
+
+export { CategoriesComponent, HeroComponent, Info, InformationComponent, Navbar };

@@ -5,6 +5,10 @@ import { CiGrid42 } from 'react-icons/ci';
 import { FaCartShopping, FaHeart, FaMagnifyingGlass, FaUser } from 'react-icons/fa6';
 import NavLink from './Link';
 
+import Image from 'next/image';
+
+import Logo from '../../assets/images/logo-no-bg.png';
+
 interface NavbarProps {}
 
 const Navbar: FunctionComponent<NavbarProps> = () => {
@@ -23,7 +27,12 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
 
       <div className={styles.warpper}>
         <div className={styles.logo}>
-          <p>Logo</p>
+          <Image
+            src={Logo}
+            alt=""
+            width={1000}
+            height={500}
+          />
         </div>
 
         {/*  SEARCH */}
