@@ -19,13 +19,13 @@ export const Previews = ({ images }: Props) => {
 
   const prev = () => {
     const index = images.indexOf(selected);
-    if (index === 0) return;
+    if (index === 0) return setSelected(images[images.length - 1]);
     setSelected(images[index - 1]);
   };
 
   const next = () => {
     const index = images.indexOf(selected);
-    if (index === images.length - 1) return;
+    if (index === images.length - 1) return setSelected(images[0]);
     setSelected(images[index + 1]);
   };
 
@@ -43,7 +43,6 @@ export const Previews = ({ images }: Props) => {
       </div>
       <div className={styles.previewsContainer}>
         <button
-          disabled={images?.length === 1}
           className={styles.backArrow}
           onClick={prev}
         >
@@ -69,7 +68,6 @@ export const Previews = ({ images }: Props) => {
           })}
         </div>
         <button
-          disabled={images?.length === 1}
           className={styles.forwardArrow}
           onClick={next}
         >

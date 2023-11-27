@@ -55,6 +55,7 @@ export const ProductPageContainer: React.FC<Props> = ({ data }) => {
             dolorum.
           </p>
         </div>
+
         {isCustomisable && (
           <div className={styles.personaliseContainer}>
             <p className={styles.title}>Personalise:</p>

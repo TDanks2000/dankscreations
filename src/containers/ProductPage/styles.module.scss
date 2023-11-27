@@ -32,6 +32,7 @@
 }
 
 .product_details {
+  margin-top: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -53,8 +54,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   font-size: 1.1rem;
 }
 
@@ -94,8 +94,13 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   gap: 5px;
+}
+
+.personaliseText {
+  font-size: 1.1rem;
+  color: #667085;
 }
 
 .personaliseTextarea {
