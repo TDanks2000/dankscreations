@@ -29,9 +29,10 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
         <div className={styles.logo}>
           <Image
             src={Logo}
-            alt=""
+            alt="danks creations logo"
             width={1000}
             height={500}
+            draggable={false}
           />
         </div>
 
