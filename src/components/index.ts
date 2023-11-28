@@ -4,5 +4,5 @@ import InformationComponent from './Information';
 import Navbar from './Navbar';
 
 import * as Info from './Info';
-
-export { CategoriesComponent, HeroComponent, Info, InformationComponent, Navbar };
+import ItemCard from './ItemCard';
+export { CategoriesComponent, HeroComponent, Info, InformationComponent, ItemCard, Navbar };

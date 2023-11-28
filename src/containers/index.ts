@@ -1,3 +1,4 @@
+import { CategoryPageContainer } from './CategoryPage';
 import HomePage from './HomePage';
 import { ProductPageContainer } from './ProductPage';
-export { HomePage, ProductPageContainer };
+export { CategoryPageContainer, HomePage, ProductPageContainer };
